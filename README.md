@@ -132,9 +132,9 @@ Custom draw effect
 
 ![renderResult](https://user-images.githubusercontent.com/14979589/69479649-40eca800-0e08-11ea-8cce-7618ae851f45.jpg)
 
-[Redirect to project](https://github.com/AdrianOrcik/Unity_UseCase_RenderingTool)
+[Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_RenderingTool)
 
-:pencil: How to increased D1 retention with tutorial?
+:pencil: How to increased D1 retention with the tutorial?
 ---------
 :warning: Issue
 - Default tutorial implementation was mixed with feature code, caused mess and problems in the code 
@@ -171,7 +171,7 @@ Demo implementation in game
 
 ![TutorialDemo](https://user-images.githubusercontent.com/14979589/83566166-3da94600-a528-11ea-9c97-f1c664bef19f.gif)
 
-[Redirect to project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
+[Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
 
 :pencil: How to develop universal time manager?
 ---------
