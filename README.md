@@ -250,8 +250,10 @@ Demo implementation in game
 - Support multiple time formats (count down, count up, etc)
 - Events and actions ready to use   
 
-:receipt: TODO architecture
-   
+:receipt: Architecture
+  
+![TimestObj](https://user-images.githubusercontent.com/14979589/136458935-ff8d722b-e488-4e08-aae7-33fb4e2b52dd.PNG)
+
 ---------
 
 </details>
