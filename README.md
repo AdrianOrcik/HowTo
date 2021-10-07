@@ -7,14 +7,14 @@ All work-related usecase projects here
 :pencil: How to prototyped new UI screens faster?
 ---------
 :warning: Issue
-- A lot of popups need to be updated depending on the game state. 
-- We didn't have an official pipeline on how don't do screens manually and reduce the duplicity of similar prefabs.
-- Our pipeline forced us to build similar prefabs and reference to screens.
+- A lot of popups need to be updated depending on the game state
+- We didn't have an official pipeline on how don't do screens manually and reduce the duplicity of similar prefabs
+- Our pipeline forced us to build similar prefabs and reference to screens
 
 :bulb: Solution
-- Create a modular UI prefab-based system that is able to build UI screens defined by code run time.
-- Prefab holder keep references on unified prefabs based on category such as atomic, groups, popups.
-- Ability to define screen template and change runtime depends on our needs and game states.
+- Create a modular UI prefab-based system that is able to build UI screens defined by code run time
+- Prefab holder keep references on unified prefabs based on category such as atomic, groups, popups
+- Ability to define screen template and change runtime depends on our needs and game states
 
 :white_check_mark: Features
 - Modular UI prefabs
@@ -22,19 +22,19 @@ All work-related usecase projects here
 - Runtime initialization
 - Prefab caching 
 
-:receipt: Basic architecture
+:receipt: TODO architecture
 
 ---------
 
 :pencil: How to optimized UI testing workflow for QA?  
 ---------
 :warning: Issue
-- Not stable codebase required to be re-tested almost after each code change.
-- QA time is burned on typical UI test cases, it cost their time and energy.
+- Not stable codebase required to be re-tested almost after each code change
+- QA time is burned on typical UI test cases, it cost their time and energy
 
 :bulb: Solution
-- Developed a simple UI testing tool that is able to run simple test cases to avoid basic human mistakes.
-- Automatic run on specific screens during QA is doing regular testing session.  
+- Developed a simple UI testing tool that is able to run simple test cases to avoid basic human mistakes
+- Automatic run on specific screens during QA is doing regular testing session  
 
 :white_check_mark: Features
 - Reusable test scenarios
@@ -45,37 +45,37 @@ All work-related usecase projects here
   - Navigation validation after button click
   - HUD bitwise validation
 
-:receipt: Basic architecture
+:receipt: TODO architecture
 
 ---------
 
 :pencil: How to avoid set active/inactive single elements of HUD during development? 
 ---------
 :warning: Issue
-- UI architecture does not support any layer of UI elements management.
-- Each HUD element is referenced as a single or grouped game object that is not flexible enough.
-- Our features like a tutorial or specific screens require of box layout what is currently now support.
-- HUD implementation requires a lot of redundant game object active/deactive code.
+- UI architecture does not support any layer of UI elements management
+- Each HUD element is referenced as a single or grouped game object that is not flexible enough
+- Our features like a tutorial or specific screens require of box layout what is currently now support
+- HUD implementation requires a lot of redundant game object active/deactive code
 
 :bulb: Solution
-- Use a bitwise operation approach where each HUD element will have a single bit value.
-- Give us the flexibility power to define custom groups depends on our needs.
+- Use a bitwise operation approach where each HUD element will have a single bit value
+- Give us the flexibility power to define custom groups depends on our needs
 
 :white_check_mark: Features
 - Flexibility & easy to extend
 - Simple usage from code or editor
 - Performance focused
 
-todo architecture
+:receipt: TODO architecture
 
 ---------
 
 :pencil: How to made UI/UX designers independent?
 ---------
 :warning: Issue
-- Screen effects are running by tweening library what is not easy to use for UI/UX designers as non-tech people
-- When UI/UX designer want to change or tweak somehthing programmer is require do code changes 
-- Currently we are also missing custom particle attractions which are not easy support by our implementation 
+- Screen effects are running by tweening the library what is not easy to use for UI/UX designers as non-tech people
+- When UI/UX designer wants to change or tweak something programmer is required to do code changes 
+- We also haven't been able to support the UI/UX wishlist with the current implementation 
 
 
 :bulb: Solution
@@ -113,16 +113,16 @@ Custom draw effect
 ---------
 :warning: Issue
 - Game contained a lot of customizable vehicles by skins or cargo
-- For art was time consuming and not easy do these visual tweaks just in the scene 
+- For art was time-consuming and not easy to do these visual tweaks just in the scene
 
 :bulb: Solution
-- Developed a cargo rendering tool with ability to preview cargos and skins
-- Tool has ability not only preview object but setup cargo transform as well
+- Cargo rendering tool with the ability to preview cargos and skins
+- Tool has the ability not only to preview objects but set up cargo transform as well
 
 :white_check_mark: Features
 - Quick preview of vehicle skins and cargos 
 - Cargo & vehicle transform prefab override
-- One change could be apply for all group of vehicles
+- One change could be applied for all groups of vehicles
 
 ### Architecture
 
@@ -136,7 +136,42 @@ Custom draw effect
 
 :pencil: How to increased D1 retention with tutorial?
 ---------
+:warning: Issue
+- Default tutorial implementation was mixed with feature code, caused mess and problems in the code 
+- Not stable implementation produced new bugs while tried to be extended or changed
+- Old implementation was not flexible enough to cover our D1 problem
 
+:bulb: Solution
+- Modular-based tutorial system which has its own logic layers and kept own implementation above features code
+- Supported to run multiple tutorials and provided an easy way hot to A/B them in production
+- Easy to implement new scenarios or modify old ones even for non-technical people
+- Tutorial logic is segmented into specific components (camera, dialog, inventory) to be easily extended and maintainable
+
+:white_check_mark: Features
+- Own logic layer, not mixed feature code with tutorial specific code
+- Tutorial editor suitable for designers 
+- Ability to provide A/B tests and improve user onboarding 
+- Easy maintainable component approach
+
+### Architecture
+
+![TutorialArchitecture](https://user-images.githubusercontent.com/14979589/83567193-e4daad00-a529-11ea-805c-38362a59382d.png)
+
+### Examples
+
+Old editor
+
+![ToolResult](https://user-images.githubusercontent.com/14979589/83565759-99bf9a80-a527-11ea-8f5f-645b74f92514.png)
+
+Iterated editor
+
+![NewTutorial](https://user-images.githubusercontent.com/14979589/136411497-828b4879-0d1e-4d9e-982a-66618f346eda.png)
+
+Demo implementation in game
+
+![TutorialDemo](https://user-images.githubusercontent.com/14979589/83566166-3da94600-a528-11ea-9c97-f1c664bef19f.gif)
+
+[Redirect to project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
 
 :pencil: How to develop universal time manager?
 ---------
