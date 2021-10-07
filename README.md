@@ -66,6 +66,26 @@ All work-related usecase projects here
 - Simple usage from code or editor
 - Performance focused
 
+todo architecture
+
+---------
+
+:pencil: How to made UI/UX designers independent?
+---------
+:warning: Issue
+- Screen effects are running by tweening library what is not easy to use for UI/UX designers as non-tech people
+- When UI/UX designer want to change or tweak somehthing programmer is require do code changes 
+- Currently we are also missing custom particle attractions which are not easy support by our implementation 
+
+
+:bulb: Solution
+- Developed custom UI particle tools to make UI/UX designers independent 
+- Support our custom UI/UX wishlist features like draw hand path or reusing scenarios 
+
+:white_check_mark: Features
+- Easy to use for non-tech people
+- Ability to support our custom needs
+
 ### Architecture
 
 ![image](https://user-images.githubusercontent.com/14979589/73868104-8f7ae180-4850-11ea-83e3-bb6a8cde332d.png)
@@ -86,26 +106,6 @@ Custom draw effect
 
 [Redirect to Project](https://github.com/AdrianOrcik/Unity_ParticleAttractor_Plugin_Source)
 
----------
-
-:pencil: How to made UI/UX designers independent?
----------
-:warning: Issue
-- Screen effects are running by tweening library what is not easy to use for UI/UX designers as non-tech people
-- When UI/UX designer want to change or tweak somehthing programmer is require do code changes 
-- Currently we are also missing custom particle attractions which are not easy support by our implementation 
-
-
-:bulb: Solution
-- Developed custom UI particle tools to make UI/UX designers independent 
-- Support our custom UI/UX wishlist features like draw hand path or reusing scenarios 
-
-:white_check_mark: Features
-- Easy to use for non-tech people
-- Ability to support our custom needs
-- 
-
-:receipt: Basic architecture
 
 ---------
 
