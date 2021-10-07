@@ -173,9 +173,24 @@ Demo implementation in game
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
 
-:pencil: How to develop universal time manager?
+:pencil: How to develop universal cross project time manager?
 ---------
+:warning: Issue
+- Not exist reusable unified time-based cross-project implementation 
+- Missed manageable access to all timers in the game 
+- Each implementation required to create a custom logic like events, time formats, etc
 
+:bulb: Solution
+- Simple unified time-based cross-project implementation
+- Easy to use with predefined rules, how things works  
+
+:white_check_mark: Features
+- Ready to be a cross-project implementation
+- Access to all times in the game
+- Support multiple time formats (count down, count up, etc)
+- Events and actions ready to use   
+
+:receipt: TODO architecture
 
 :pencil: How to download game definitions in one click?
 ---------
