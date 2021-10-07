@@ -90,7 +90,7 @@ todo architecture
 
 ![image](https://user-images.githubusercontent.com/14979589/73868104-8f7ae180-4850-11ea-83e3-bb6a8cde332d.png)
 
-### Examples
+### Results
 
 Implementation
 
@@ -104,14 +104,35 @@ Custom draw effect
 
 ![DrawAttractorEffect](https://user-images.githubusercontent.com/14979589/73284391-2aded780-41fd-11ea-8573-99ed373e4bda.gif)
 
-[Redirect to Project](https://github.com/AdrianOrcik/Unity_ParticleAttractor_Plugin_Source)
+[Redirect to project](https://github.com/AdrianOrcik/Unity_ParticleAttractor_Plugin_Source)
 
 
 ---------
 
 :pencil: How to optimized level art prefabs workflow?
 ---------
+:warning: Issue
+- Game contained a lot of customizable vehicles by skins or cargo
+- For art was time consuming and not easy do these visual tweaks just in the scene 
 
+:bulb: Solution
+- Developed a cargo rendering tool with ability to preview cargos and skins
+- Tool has ability not only preview object but setup cargo transform as well
+
+:white_check_mark: Features
+- Quick preview of vehicle skins and cargos 
+- Cargo & vehicle transform prefab override
+- One change could be apply for all group of vehicles
+
+### Architecture
+
+![CargoArchitecture](https://user-images.githubusercontent.com/14979589/69476392-01ab6080-0de2-11ea-83c8-97a96a7c5eb1.PNG)
+
+### Result
+
+![renderResult](https://user-images.githubusercontent.com/14979589/69479649-40eca800-0e08-11ea-8cce-7618ae851f45.jpg)
+
+[Redirect to project](https://github.com/AdrianOrcik/Unity_UseCase_RenderingTool)
 
 :pencil: How to increased D1 retention with tutorial?
 ---------
