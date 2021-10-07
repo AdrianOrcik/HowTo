@@ -4,7 +4,7 @@ All work-related usecase projects here
 
 ---------
 
-:pencil: How to prototyped new UI screens faster?
+:pencil: How we prototyped new UI screens faster?
 ---------
 :warning: Issue
 - A lot of popups need to be updated depending on the game state
@@ -26,7 +26,7 @@ All work-related usecase projects here
 
 ---------
 
-:pencil: How to optimized UI testing workflow for QA?  
+:pencil: How we optimized the UI testing workflow for QA? 
 ---------
 :warning: Issue
 - Not stable codebase required to be re-tested almost after each code change
@@ -49,7 +49,7 @@ All work-related usecase projects here
 
 ---------
 
-:pencil: How to avoid set active/inactive single elements of HUD during development? 
+:pencil: How we avoided setting active/inactive single elements of HUD in code? 
 ---------
 :warning: Issue
 - UI architecture does not support any layer of UI elements management
@@ -70,7 +70,7 @@ All work-related usecase projects here
 
 ---------
 
-:pencil: How to made UI/UX designers independent?
+:pencil: How we made UI/UX designers independent?
 ---------
 :warning: Issue
 - Screen effects are running by tweening the library what is not easy to use for UI/UX designers as non-tech people
@@ -90,7 +90,7 @@ All work-related usecase projects here
 
 ![image](https://user-images.githubusercontent.com/14979589/73868104-8f7ae180-4850-11ea-83e3-bb6a8cde332d.png)
 
-### Results
+### Result
 
 Implementation
 
@@ -109,7 +109,7 @@ Custom draw effect
 
 ---------
 
-:pencil: How to optimized level art prefabs workflow?
+:pencil: How we optimized level vehicle prefabs workflow for artist?
 ---------
 :warning: Issue
 - Game contained a lot of customizable vehicles by skins or cargo
@@ -134,7 +134,7 @@ Custom draw effect
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_RenderingTool)
 
-:pencil: How to increased D1 retention with the tutorial?
+:pencil: How we increased D1 retention and decrease bug rate with the new tutorial?
 ---------
 :warning: Issue
 - Default tutorial implementation was mixed with feature code, caused mess and problems in the code 
@@ -163,7 +163,7 @@ Old editor
 
 ![ToolResult](https://user-images.githubusercontent.com/14979589/83565759-99bf9a80-a527-11ea-8f5f-645b74f92514.png)
 
-Iterated editor
+Improved editor
 
 ![NewTutorial](https://user-images.githubusercontent.com/14979589/136411497-828b4879-0d1e-4d9e-982a-66618f346eda.png)
 
@@ -173,7 +173,7 @@ Demo implementation in game
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
 
-:pencil: How to develop universal cross project time manager?
+:pencil: How we developed a universal cross-project time manager?
 ---------
 :warning: Issue
 - Not exist reusable unified time-based cross-project implementation 
@@ -181,18 +181,42 @@ Demo implementation in game
 - Each implementation required to create a custom logic like events, time formats, etc
 
 :bulb: Solution
-- Simple unified time-based cross-project implementation
+- Not exist simple unified time-based cross-project implementation
 - Easy to use with predefined rules, how things works  
 
 :white_check_mark: Features
-- Ready to be a cross-project implementation
 - Access to all times in the game
 - Support multiple time formats (count down, count up, etc)
 - Events and actions ready to use   
 
 :receipt: TODO architecture
 
-:pencil: How to download game definitions in one click?
+:pencil: How we developed the ability to downloading game definitions by one click?
 ---------
+:warning: Issue
+- Hard coded client game definitions is now enough flexible 
+- During development we needed to has multiple versions of definitions
 
+:bulb: Solution
+- Used google sheet as main data holder with ability export json by with version by custom add-on
+- Python script with usage of google API give as flexibility to see whats happening on central google drive 
+- Unity implemnetation provide easy to use interface to manipulate with this definition data
+
+:white_check_mark: Features
+- By one click to download a game definitions
+- Game definition versions 
+
+### Architecture
+
+![Architecture](https://user-images.githubusercontent.com/14979589/89738801-36e90300-da84-11ea-8ccb-c5c4273725ac.png)
+
+### Result
+
+Google Sheet Add-on<br>
+![ExportAdd-on](https://user-images.githubusercontent.com/14979589/89738913-0190e500-da85-11ea-8a63-62151db6a106.png)
+
+Unity Definition Downloader Editor<br>
+![UnityEditor](https://user-images.githubusercontent.com/14979589/89739003-b3301600-da85-11ea-88d6-fe6ab3536d7d.png)
+
+[Redirect to project](https://github.com/AdrianOrcik/Unity_GameJam_GalaxyDefender)
 
