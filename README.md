@@ -25,8 +25,10 @@ Some of useful work-related project use cases I have been working on.
 - Runtime initialization
 - Prefab caching 
 
-:receipt: TODO architecture
+### Architecture
 
+![UI Screen tool architecture](https://user-images.githubusercontent.com/14979589/136431076-5ad1784a-ea47-494f-b4a6-ee8b9d2d91e5.png)
+  
 </details>
 
 
@@ -51,7 +53,9 @@ Some of useful work-related project use cases I have been working on.
   - Navigation validation after button click
   - HUD bitwise validation
 
-:receipt: TODO architecture
+### Architecture
+  
+![UI Screen Validation Tool](https://user-images.githubusercontent.com/14979589/136432418-e25cf547-5494-4f27-8548-b749edeacd0f.png))
 
 </details>
 
