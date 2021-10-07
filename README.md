@@ -1,9 +1,11 @@
-:page_facing_up: Project Expo
+:page_facing_up: Project use cases 
 ---------
-All work-related usecase projects here
+
+Some of useful work-related project use cases I have been working on.
 
 ---------
----------
+
+<details><summary>How we prototyped new UI screens faster?</summary>
 
 :pencil: How we prototyped new UI screens faster?
 ---------
@@ -25,8 +27,10 @@ All work-related usecase projects here
 
 :receipt: TODO architecture
 
----------
----------
+</details>
+
+
+<details><summary>How we optimized the UI testing workflow for QA? </summary>
 
 :pencil: How we optimized the UI testing workflow for QA? 
 ---------
@@ -49,8 +53,10 @@ All work-related usecase projects here
 
 :receipt: TODO architecture
 
----------
----------
+</details>
+
+
+<details><summary>How we avoided setting active/inactive single elements of HUD in code?</summary>
 
 :pencil: How we avoided setting active/inactive single elements of HUD in code? 
 ---------
@@ -71,9 +77,11 @@ All work-related usecase projects here
 
 :receipt: TODO architecture
 
----------
----------
+</details>
 
+
+<details><summary>How we made UI/UX designers independent?</summary>
+  
 :pencil: How we made UI/UX designers independent?
 ---------
 :warning: Issue
@@ -111,8 +119,10 @@ Custom draw effect
 [Redirect to project](https://github.com/AdrianOrcik/Unity_ParticleAttractor_Plugin_Source)
 
 
----------
----------
+</details>
+
+
+<details><summary>How we optimized level vehicle prefabs workflow for artist?</summary>
 
 :pencil: How we optimized level vehicle prefabs workflow for artist?
 ---------
@@ -139,9 +149,11 @@ Custom draw effect
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_RenderingTool)
 
----------
----------
+</details>
 
+
+<details><summary>How we increased D1 retention and decrease bug rate with the new tutorial?</summary>
+  
 :pencil: How we increased D1 retention and decrease bug rate with the new tutorial?
 ---------
 :warning: Issue
@@ -181,9 +193,11 @@ Demo implementation in game
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
 
----------
----------
+</details>
 
+
+<details><summary>How we developed a universal cross-project time manager?</summary>
+  
 :pencil: How we developed a universal cross-project time manager?
 ---------
 :warning: Issue
@@ -202,10 +216,12 @@ Demo implementation in game
 
 :receipt: TODO architecture
 
----------
----------
+</details>
 
-:pencil: How we developed the ability to downloading game definitions by one click?
+
+<details><summary>How we developed a pipeline with the ability to download game definitions by one click?</summary>
+  
+:pencil: How we developed a pipeline with the ability to download game definitions by one click?
 ---------
 :warning: Issue
 - Hard coded client game definitions is now enough flexible 
@@ -234,3 +250,4 @@ Unity Definition Downloader Editor<br>
 
 [Redirect to project](https://github.com/AdrianOrcik/Unity_GameJam_GalaxyDefender)
 
+</details>
