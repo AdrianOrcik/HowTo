@@ -3,6 +3,7 @@
 All work-related usecase projects here
 
 ---------
+---------
 
 :pencil: How we prototyped new UI screens faster?
 ---------
@@ -24,6 +25,7 @@ All work-related usecase projects here
 
 :receipt: TODO architecture
 
+---------
 ---------
 
 :pencil: How we optimized the UI testing workflow for QA? 
@@ -48,6 +50,7 @@ All work-related usecase projects here
 :receipt: TODO architecture
 
 ---------
+---------
 
 :pencil: How we avoided setting active/inactive single elements of HUD in code? 
 ---------
@@ -68,6 +71,7 @@ All work-related usecase projects here
 
 :receipt: TODO architecture
 
+---------
 ---------
 
 :pencil: How we made UI/UX designers independent?
@@ -108,6 +112,7 @@ Custom draw effect
 
 
 ---------
+---------
 
 :pencil: How we optimized level vehicle prefabs workflow for artist?
 ---------
@@ -133,6 +138,9 @@ Custom draw effect
 ![renderResult](https://user-images.githubusercontent.com/14979589/69479649-40eca800-0e08-11ea-8cce-7618ae851f45.jpg)
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_RenderingTool)
+
+---------
+---------
 
 :pencil: How we increased D1 retention and decrease bug rate with the new tutorial?
 ---------
@@ -173,6 +181,9 @@ Demo implementation in game
 
 [Redirect to the project](https://github.com/AdrianOrcik/Unity_UseCase_Tutorial)
 
+---------
+---------
+
 :pencil: How we developed a universal cross-project time manager?
 ---------
 :warning: Issue
@@ -190,6 +201,9 @@ Demo implementation in game
 - Events and actions ready to use   
 
 :receipt: TODO architecture
+
+---------
+---------
 
 :pencil: How we developed the ability to downloading game definitions by one click?
 ---------
