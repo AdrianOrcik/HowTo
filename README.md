@@ -1,7 +1,7 @@
 :page_facing_up: Project use cases 
 ---------
 
-Some of useful work-related project use cases I have been working on.
+Some of the useful work-related project use cases I have been working on.
 
 ---------
 
