@@ -92,7 +92,9 @@ Some of useful work-related project use cases I have been working on.
 - Simple usage from code or editor
 - Performance focused
 
-:receipt: TODO architecture
+### Architecture
+  
+  ![Screenshot 2021-10-08 at 12 36 14](https://user-images.githubusercontent.com/14979589/136533893-f72ed7fe-166a-40ef-84f5-3df4f7a275db.png)
 
 ---------
   
