@@ -5,26 +5,26 @@ Some of the useful work-related project use cases I have been working on.
 
 ---------
 
-<details><summary>How we prototyped new UI screens faster?</summary>
+<details><summary>How to prototype faster new UI screens?</summary>
 
-:pencil: How we prototyped new UI screens faster?
+:pencil: How we prototype faster new UI screens?
 ---------
 :warning: Issue
   ---------
 - A lot of popups need to be updated depending on the game state
 - We didn't have an official pipeline on how don't do screens manually and reduce the duplicity of similar prefabs
-- Our pipeline forced us to build similar prefabs and reference to screens
+- Our pipeline forced us to build similar prefabs and reference them to screens
 
 :bulb: Solution
   ---------
-- Create a modular UI prefab-based system that is able to build UI screens defined by code run time
+- Create a modular UI prefab-based system able to build UI screens defined by code even in run time
 - Prefab holder keep references on unified prefabs based on category such as atomic, groups, popups
 - Ability to define screen template and change runtime depends on our needs and game states
 
 :white_check_mark: Features
   ---------
-- Modular UI prefabs
-- Popups generated based on code script
+- Modularity and flexibility of UI screens
+- Popups generated based on the scripts or editor
 - Runtime initialization
 - Prefab caching 
 
@@ -37,29 +37,29 @@ Some of the useful work-related project use cases I have been working on.
 </details>
 
 
-<details><summary>How we optimized the UI testing workflow for QA? </summary>
+<details><summary>How to optimize the UI testing workflow for QA? </summary>
 
-:pencil: How we optimized the UI testing workflow for QA? 
+:pencil: How to optimize the UI testing workflow for QA? 
 ---------
 :warning: Issue
   ---------
-- Not stable codebase required to be re-tested almost after each code change
-- QA time is burned on typical UI test cases, it cost their time and energy
+- Not stable codebase required to be re-tested almost after each code iteration
+- QA time is burned by typical UI test cases
 
 :bulb: Solution
   ---------
-- Developed a simple UI testing tool that is able to run simple test cases to avoid basic human mistakes
-- Automatic run on specific screens during QA is doing regular testing session  
+- Develop a simple UI testing tool that is able to run simple test cases and avoid basic human mistakes
+- Run automatically on specific screens while QA is doing regular testing session  
 
 :white_check_mark: Features
   ---------
 - Reusable test scenarios
-- Automatic run on specific screens
-- Different error handling 
+- Run automatically on specific screens
+- Various error handling 
   - Button reference
   - Text or image overlaps
   - Navigation validation after button click
-  - HUD bitwise validation
+  - HUD bitwise validation, etc...
 
 ### Architecture
   
@@ -70,21 +70,21 @@ Some of the useful work-related project use cases I have been working on.
 </details>
 
 
-<details><summary>How we avoided setting active/inactive single elements of HUD in code?</summary>
+<details><summary>How to avoid setting active/inactive single elements of HUD in code?</summary>
 
-:pencil: How we avoided setting active/inactive single elements of HUD in code? 
+:pencil: How to avoid setting active/inactive single elements of HUD in code? 
 ---------
 :warning: Issue
   ---------
 - UI architecture does not support any layer of UI elements management
-- Each HUD element is referenced as a single or grouped game object that is not flexible enough
-- Our features like a tutorial or specific screens require of box layout what is currently now support
-- HUD implementation requires a lot of redundant game object active/deactive code
+- Each HUD element is referenced as a single or grouped game object,  not flexible enough
+- Features like a tutorial or specific screens required an out of box HUD layout
+- HUD implementation requires a lot of redundant set active/inactive code
 
 :bulb: Solution
   ---------
-- Use a bitwise operation approach where each HUD element will have a single bit value
-- Give us the flexibility power to define custom groups depends on our needs
+- Use a bitwise operation approach, each HUD element has a single bit value
+- Flexibility power to define custom groups depends on our needs
 
 :white_check_mark: Features
   ---------
@@ -101,15 +101,15 @@ Some of the useful work-related project use cases I have been working on.
 </details>
 
 
-<details><summary>How we made UI/UX designers independent?</summary>
+<details><summary>How to make UI/UX designers independent?</summary>
   
-:pencil: How we made UI/UX designers independent?
+:pencil: How to make UI/UX designers independent?
 ---------
 :warning: Issue
   ---------
-- Screen effects are running by tweening the library what is not easy to use for UI/UX designers as non-tech people
-- When UI/UX designer wants to change or tweak something programmer is required to do code changes 
-- We also haven't been able to support the UI/UX wishlist with the current implementation 
+- UI effects powered by the tween library what is not easy to use for non technical people for example like UI/UX people
+- UI/UX designer wants to change or tweak something, the programmer is required to do changes in the code 
+- We haven't been able to support the UI/UX wishlist with the current implementation as well
 
 
 :bulb: Solution
@@ -147,14 +147,14 @@ Custom draw effect
 </details>
 
 
-<details><summary>How we optimized level vehicle prefabs workflow for artist?</summary>
+<details><summary>How to optimize the workflow of vehicle prefabs for artists?</summary>
 
-:pencil: How we optimized level vehicle prefabs workflow for artist?
+:pencil: How to optimize the workflow of vehicle prefabs for artists?
 ---------
 :warning: Issue
   ---------
-- Game contained a lot of customizable vehicles by skins or cargo
-- For art was time-consuming and not easy to do these visual tweaks just in the scene
+- Game has a lot of customizable vehicles by skins or cargos
+- For artists, it was time-consuming and not easy to use these visual tweaks in the scene
 
 :bulb: Solution
   ---------
@@ -182,28 +182,28 @@ Custom draw effect
 </details>
 
 
-<details><summary>How we increased D1 retention and decrease bug rate with the new tutorial?</summary>
+<details><summary>How to increase D1 retention and decrease bug rate with the new tutorials?</summary>
   
-:pencil: How we increased D1 retention and decrease bug rate with the new tutorial?
+:pencil: How to increase D1 retention and decrease bug rate with the new tutorials?
 ---------
 :warning: Issue
   ---------
-- Default tutorial implementation was mixed with feature code, caused mess and problems in the code 
+- Default tutorial implementation mixed with feature code, caused mess and problems in the code 
 - Not stable implementation produced new bugs while tried to be extended or changed
-- Old implementation was not flexible enough to cover our D1 problem
+- Old implementation not flexible enough to solve D1 retention problem with changes of existing tutorial
 
 :bulb: Solution
   ---------
-- Modular-based tutorial system which has its own logic layers and kept own implementation above features code
-- Supported to run multiple tutorials and provided an easy way hot to A/B them in production
+- Modular-based system with own logic layer and kept own implementation above features code
+- Support multiple tutorials and easy way how to A/B test them in the production
 - Easy to implement new scenarios or modify old ones even for non-technical people
 - Tutorial logic is segmented into specific components (camera, dialog, inventory) to be easily extended and maintainable
 
 :white_check_mark: Features
   ---------
-- Own logic layer, not mixed feature code with tutorial specific code
+- Own logic layer, separated tutorial code from gameplay code
 - Tutorial editor suitable for designers 
-- Ability to provide A/B tests and improve user onboarding 
+- Ability to A/B test and improve the user onboarding 
 - Easy maintainable component approach
 
 ### Architecture
@@ -231,26 +231,26 @@ Demo implementation in game
 </details>
 
 
-<details><summary>How we developed a universal cross-project time manager?</summary>
+<details><summary>How to develop a universal cross-project time manager?</summary>
   
-:pencil: How we developed a universal cross-project time manager?
+:pencil: How to develop a universal cross-project time manager?
 ---------
 :warning: Issue
   ---------
 - Not exist reusable unified time-based cross-project implementation 
 - Missed manageable access to all timers in the game 
-- Each implementation required to create a custom logic like events, time formats, etc
+- Every new time implementation is required to create a custom logic like events, time formats, etc
 
 :bulb: Solution
   ---------
-- Not exist simple unified time-based cross-project implementation
-- Easy to use with predefined rules, how things works  
+- Develop a unified timing system with the ability to use cross-projects  
+- Easy to use with predefined rules  
 
 :white_check_mark: Features
   ---------
 - Access to all times in the game
 - Support multiple time formats (count down, count up, etc)
-- Events and actions ready to use   
+- Events and actions ready to use  
 
 :receipt: Architecture
   
@@ -261,25 +261,25 @@ Demo implementation in game
 </details>
 
 
-<details><summary>How we developed a pipeline with the ability to download game definitions by one click?</summary>
+<details><summary>How to develop a pipeline with the ability to download game definitions with one click?</summary>
   
-:pencil: How we developed a pipeline with the ability to download game definitions by one click?
+:pencil: How to develop a pipeline with the ability to download game definitions with one click?
 ---------
 :warning: Issue
   ---------
-- Hard coded client game definitions is now enough flexible 
-- During development we needed to has multiple versions of definitions
+- Hardcoded client game definitions are now enough flexible 
+- During development we needed to have multiple versions of definitions
 
 :bulb: Solution
   ---------
-- Used google sheet as main data holder with ability export json by with version by custom add-on
-- Python script with usage of google API give as flexibility to see whats happening on central google drive 
-- Unity implemnetation provide easy to use interface to manipulate with this definition data
+- Used google sheet as main data holder with the ability to export JSON by with version by custom add-on
+- Python script with the usage of google API gives as the flexibility to see what's happening on the central google drive 
+- Unity implementation provides easy to use interface to manipulate with this definition data
 
 :white_check_mark: Features
   ---------
 - By one click to download a game definitions
-- Game definition versions 
+- Game definition versions  
 
 ### Architecture
 
